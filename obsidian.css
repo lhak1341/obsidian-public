@@ -1,0 +1,155 @@
+.workspace {
+	--font-family-serif: Merriweather, "Merriweather", serif;
+	--font-family-sansserif: Lato, "Lato", sans-serif;
+	--font-family-monospace: Inconsolata, "Inconsolata", monospace;
+	--font-weight: 300;
+	--line-height: 1.6;
+}
+
+.theme-dark {
+	--text-accent: #2D9DE3; /* links & selected icons */
+	--linking-color: #2D9DE3;
+	--link-color: #2D9DE3;
+	--text-strong: #ffa62b;
+	--text-em: #db6400;
+	--text-title-h1: #f8efd4;
+	--text-title-h2: #edc988;
+	--text-title-h3: #d7385e;
+	--text-title-h4: #ff9a8c;
+	--text-title-h5: #adb36e;
+	--text-title-h6: #8f7077;
+}
+
+div.markdown-source-view, div.markdown-preview-view, ul, li {
+	font-family: var(--font-family-serif);
+	font-weight: var(--font-weight);
+	line-height: var(--line-height);
+}
+
+strong, .cm-strong { color: var(--text-strong); font-weight: 700; }
+
+em, .cm-em { color: var(--text-em); }
+
+blockquote p { font-style: italic; }
+
+h1 {
+	margin-top: 15% !important;
+	margin-bottom: 5% !important;
+	font-family: var(--font-family-sansserif);
+	color: var(--text-title-h1);
+}
+
+h2 {
+	margin-top: 4% !important;
+	font-family: var(--font-family-sansserif);
+	color: var(--text-title-h2);
+}
+
+h3 { font-family: var(--font-family-sansserif); color: var(--text-title-h3); }
+
+h4 { font-family: var(--font-family-sansserif); color: var(--text-title-h4); }
+
+h5 { font-family: var(--font-family-sansserif); color: var(--text-title-h5); }
+
+h6 { font-family: var(--font-family-sansserif); color: var(--text-title-h6); }
+
+.cm-header { font-family: var(--font-family-sansserif); }
+
+li { margin-top: .15em; margin-bottom: .25em; }
+
+/* Format hightlighting */
+
+.theme-light .markdown-preview-view mark,
+.theme-light .cm-s-obsidian span.cm-formatting-highlight,
+.theme-light .cm-s-obsidian span.cm-highlight {
+   color: #10161A;
+   background-color: #FEEBc8 !important;
+}
+
+.theme-dark .markdown-preview-view mark,
+.theme-dark .cm-s-obsidian span.cm-formatting-highlight,
+.theme-dark .cm-s-obsidian span.cm-highlight {
+   background-color: #16697a !important;
+}
+
+/* Format link */
+
+a.internal-link:link { text-decoration: none; }
+
+.is-unresolved { opacity: 1 !important; color: inherit;}
+
+.theme-dark .cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+	text-decoration: none;
+}
+
+.theme-light .cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+	text-decoration: none;
+}
+
+.theme-dark .cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-hmd-internal-link:hover {
+	text-decoration: none;
+}
+
+/* Increase font size of code */
+
+mjx-math.MJX-TEX { font-size: 140%; }
+
+span.cm-hmd-codeblock, span.token {
+	font-family: var(--font-family-monospace);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Bullet point relationship lines */
+
+.cm-hmd-list-indent .cm-tab, ul ul, ol ul, ul ol, ol ol { position: relative; }
+
+.cm-hmd-list-indent .cm-tab::before,
+ul ul::before, ol ul::before, ul ol::before, ol ol::before {
+  content:'';
+  border-left: 1px solid var(--background-modifier-border);
+  position: absolute;
+}
+
+.cm-hmd-list-indent .cm-tab::before { left: 0; top: -5px; bottom: -4px; }
+
+ul ul::before, ol ul::before, ul ol::before, ol ol::before {
+  left: -11px;
+  top: 0;
+  bottom: 0;
+}
+
+/* Tag pill */
+
+.tag {
+  background-color: var(--text-accent);
+  border: none;
+  color: white;
+  font-family: var(--font-family-sansserif);
+  font-size: 15px;
+	font-weight: 400;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 0px;
+  cursor: pointer;
+  border-radius: 14px;
+}
+
+.tag:hover { color: white; background-color: var(--text-accent-hover); }
+
+/* Give certain tags a different color
+
+.tag[href^="#moc"] { background-color: #f9813a; }
+
+/* Naked Embeds */
+
+.markdown-embed-title { display:none; }
+.markdown-preview-view .markdown-embed { border:none; padding:0; margin:0; }
+.markdown-preview-view .markdown-embed-content { max-height: unset;}
+.markdown-preview-view .markdown-embed-content>:first-child { margin-top: 0; }
+.markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
