@@ -57,6 +57,8 @@ h6 { font-family: var(--font-family-sansserif); color: var(--text-title-h6); }
 
 li { margin-top: .15em; margin-bottom: .25em; }
 
+div.CodeMirror-linenumber { font-family: var(--font-family-sansserif); font-size: .8em; font-weight: 500; }
+
 /* Format hightlighting */
 
 .theme-light .markdown-preview-view mark,
