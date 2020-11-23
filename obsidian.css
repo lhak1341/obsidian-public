@@ -78,7 +78,7 @@ div.CodeMirror-linenumber { font-family: var(--font-family-sansserif); font-size
 
 a.internal-link:link { text-decoration: none; }
 
-.is-unresolved { opacity: 1 !important; color: inherit;}
+.is-unresolved { opacity: 1 !important; font-style: italic;}
 
 .theme-dark .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
