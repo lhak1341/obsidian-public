@@ -171,6 +171,7 @@ mjx-math.MJX-TEX {
 code,
 pre.HyperMD-codeblock.CodeMirror-line,
 span.cm-hmd-codeblock,
+span.cm-inline-code,
 span.token {
 	font-family: var(--font-family-monospace) !important;
 	font-size  : 15px !important;
